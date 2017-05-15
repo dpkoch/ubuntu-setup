@@ -46,4 +46,7 @@ sudo dpkg --add-architecture i386
 sudo apt-get update
 sudo apt-get -y install libpython2.7:i386
 
+# set permissions
+sudo usermod -a -G dialout $USER
+
 popd
