@@ -2,7 +2,7 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-sudo apt-get -y install texlive texlive-bibtex-extra texlive-fonts-extra texlive-math-extra texlive-extra-utils biber
+sudo apt-get -y install texlive texlive-bibtex-extra texlive-fonts-extra texlive-math-extra texlive-extra-utils biber latexmk
 
 if [ ! -d "/home/$USER/.local/bin" ]; then
   mkdir /home/$USER/.local/bin
