@@ -11,3 +11,7 @@ sudo apt-get -y install meld
 git config --global core.editor vim
 git config --global diff.tool meld
 git config --global merge.tool meld
+
+# mkdocs
+sudo apt-get -y install python-pip
+sudo pip install mkdocs
