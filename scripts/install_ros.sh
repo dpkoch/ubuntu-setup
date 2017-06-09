@@ -17,14 +17,14 @@ if [ ! -d "/home/$USER/.local/bin" ]; then
 fi
 cp $DIR/../resources/setrosmaster ~/.local/bin/
 
-echo "log4j.logger.ros.rosflight_io=DEBUG" > ~/.rosconsole
+cp $DIR/../resources/rosconsole ~/.rosconsole
 
 echo "export ROS_MASTER_URI=http://\`cat ~/.rosmasteruri\`:11311" > ~/.rosrc
 echo "" >> ~/.rosrc
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.rosrc
 echo "" >> ~/.rosrc
 echo "export ROSCONSOLE_FORMAT='[\${severity}] [\${node}]: \${message}'" >> ~/.rosrc
-echo "export ROSCONSOLE_CONFIG_FILE=/home/dpkoch/.rosconsole" >> ~/.rosrc
+echo "export ROSCONSOLE_CONFIG_FILE=/home/$USER/.rosconsole" >> ~/.rosrc
 
 if ! grep -xq "source /home/$USER/.rosrc" ~/.bashrc
 then
