@@ -8,3 +8,5 @@ if [ ! -d "/home/$USER/.local/bin" ]; then
   mkdir /home/$USER/.local/bin
 fi
 cp $DIR/../resources/clean-latex ~/.local/bin/
+
+sudo apt-get -y install okular
