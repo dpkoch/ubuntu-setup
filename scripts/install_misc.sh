@@ -7,6 +7,7 @@ sudo apt-get -y install gimp
 sudo apt-get -y install inkscape
 sudo apt-get -y install meld
 sudo apt-get -y install astyle
+sudo apt-get -y install screen
 
 # configuration
 git config --global push.default simple
