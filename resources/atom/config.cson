@@ -1,0 +1,21 @@
+"*":
+  "activate-power-mode":
+    autoToggle: false
+    comboMode:
+      enabled: false
+  core:
+    disabledPackages: [
+      "symbols-view"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    preferredLineLength: 120
+    softWrap: true
+  "exception-reporting":
+    userId: "515c11af-7de4-477c-86d9-221aea214111"
+  latextools: {}
+  "markdown-preview": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
