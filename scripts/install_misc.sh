@@ -16,6 +16,7 @@ git config --global push.default simple
 git config --global core.editor vim
 git config --global diff.tool meld
 git config --global merge.tool meld
+git config --global alias.subup "submodule update --init --recursive"
 
 # vim configuration
 cp $DIR/../resources/vimrc ~/.vimrc
