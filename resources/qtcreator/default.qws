@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorSession>
-<!-- Written by QtCreator 4.1.0, 2017-05-12T15:13:09. -->
+<!-- Written by QtCreator 4.1.0, 2017-08-12T22:57:10. -->
 <qtcreator>
  <data>
   <variable>CascadeSetActive</variable>
@@ -12,7 +12,7 @@
  </data>
  <data>
   <variable>EditorSettings</variable>
-  <value type="QByteArray">AAAAD0VkaXRvck1hbmFnZXJWNAAAAAIAAAB6AC8AaABvAG0AZQAvAGQAcABrAG8AYwBoAC8AcgBvAHMAZgBsAGkAZwBoAHQALwByAG8AcwBmAGwAaQBnAGgAdABfAHcAcwAvAHMAcgBjAC8AZgBjAHUAXwBpAG8ALwBzAHIAYwAvAGYAYwB1AF8AaQBvAC4AYwBwAHAAAAAMAAAAABwAAAABAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAfgAvAGgAbwBtAGUALwBkAHAAawBvAGMAaAAvAHIAbwBzAGYAbABpAGcAaAB0AC8AcgBvAHMAZgBsAGkAZwBoAHQAXwB3AHMALwBzAHIAYwAvAGYAYwB1AF8AaQBvAC8AaQBuAGMAbAB1AGQAZQAvAGYAYwB1AF8AaQBvAC4AaAAAAAwAAAAAHAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAACAAAAegAvAGgAbwBtAGUALwBkAHAAawBvAGMAaAAvAHIAbwBzAGYAbABpAGcAaAB0AC8AcgBvAHMAZgBsAGkAZwBoAHQAXwB3AHMALwBzAHIAYwAvAGYAYwB1AF8AaQBvAC8AcwByAGMALwBmAGMAdQBfAGkAbwAuAGMAcABwAAAAFABmAGMAdQBfAGkAbwAuAGMAcABwAAAAE0NwcEVkaXRvci5DKytFZGl0b3IAAAB+AC8AaABvAG0AZQAvAGQAcABrAG8AYwBoAC8AcgBvAHMAZgBsAGkAZwBoAHQALwByAG8AcwBmAGwAaQBnAGgAdABfAHcAcwAvAHMAcgBjAC8AZgBjAHUAXwBpAG8ALwBpAG4AYwBsAHUAZABlAC8AZgBjAHUAXwBpAG8ALgBoAAAAEABmAGMAdQBfAGkAbwAuAGgAAAATQ3BwRWRpdG9yLkMrK0VkaXRvcgAAAN0AAAANY3VycmVudGVkaXRvcgAAAH4ALwBoAG8AbQBlAC8AZABwAGsAbwBjAGgALwByAG8AcwBmAGwAaQBnAGgAdAAvAHIAbwBzAGYAbABpAGcAaAB0AF8AdwBzAC8AcwByAGMALwBmAGMAdQBfAGkAbwAvAGkAbgBjAGwAdQBkAGUALwBmAGMAdQBfAGkAbwAuAGgAAAAmAEMAcABwAEUAZABpAHQAbwByAC4AQwArACsARQBkAGkAdABvAHIAAAAcAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAA==</value>
+  <value type="QByteArray">AAAAD0VkaXRvck1hbmFnZXJWNAAAAAIAAACgAC8AaABvAG0AZQAvAGQAcABrAG8AYwBoAC8AcgBvAHMAZgBsAGkAZwBoAHQALwByAG8AcwBmAGwAaQBnAGgAdABfAHcAcwAvAHMAcgBjAC8AcgBvAHMAZgBsAGkAZwBoAHQALwByAG8AcwBmAGwAaQBnAGgAdAAvAHMAcgBjAC8AcgBvAHMAZgBsAGkAZwBoAHQAXwBpAG8ALgBjAHAAcAAAAAwAAAAAGAAAAAEAAADgAAAAAAAAAQ4AAABeAAAAAAAAAOAALwBoAG8AbQBlAC8AZABwAGsAbwBjAGgALwByAG8AcwBmAGwAaQBnAGgAdAAvAHIAbwBzAGYAbABpAGcAaAB0AF8AdwBzAC8AcwByAGMALwByAG8AcwBmAGwAaQBnAGgAdAAvAHIAbwBzAGYAbABpAGcAaAB0AC8AaQBuAGMAbAB1AGQAZQAvAHIAbwBzAGYAbABpAGcAaAB0AC8AbQBhAHYAbABpAG4AawAvAHYAMQAuADAALwByAG8AcwBmAGwAaQBnAGgAdAAvAHIAbwBzAGYAbABpAGcAaAB0AC4AaAAAAAwAAAAAHAAAAAEAAABFAAAAAAAAAGcAAAABAAAAAQAAAAAAAAACAAAAoAAvAGgAbwBtAGUALwBkAHAAawBvAGMAaAAvAHIAbwBzAGYAbABpAGcAaAB0AC8AcgBvAHMAZgBsAGkAZwBoAHQAXwB3AHMALwBzAHIAYwAvAHIAbwBzAGYAbABpAGcAaAB0AC8AcgBvAHMAZgBsAGkAZwBoAHQALwBzAHIAYwAvAHIAbwBzAGYAbABpAGcAaAB0AF8AaQBvAC4AYwBwAHAAAAAgAHIAbwBzAGYAbABpAGcAaAB0AF8AaQBvAC4AYwBwAHAAAAATQ3BwRWRpdG9yLkMrK0VkaXRvcgAAAOAALwBoAG8AbQBlAC8AZABwAGsAbwBjAGgALwByAG8AcwBmAGwAaQBnAGgAdAAvAHIAbwBzAGYAbABpAGcAaAB0AF8AdwBzAC8AcwByAGMALwByAG8AcwBmAGwAaQBnAGgAdAAvAHIAbwBzAGYAbABpAGcAaAB0AC8AaQBuAGMAbAB1AGQAZQAvAHIAbwBzAGYAbABpAGcAaAB0AC8AbQBhAHYAbABpAG4AawAvAHYAMQAuADAALwByAG8AcwBmAGwAaQBnAGgAdAAvAHIAbwBzAGYAbABpAGcAaAB0AC4AaAAAABYAcgBvAHMAZgBsAGkAZwBoAHQALgBoAAAAE0NwcEVkaXRvci5DKytFZGl0b3IAAAD7AAAADWN1cnJlbnRlZGl0b3IAAACgAC8AaABvAG0AZQAvAGQAcABrAG8AYwBoAC8AcgBvAHMAZgBsAGkAZwBoAHQALwByAG8AcwBmAGwAaQBnAGgAdABfAHcAcwAvAHMAcgBjAC8AcgBvAHMAZgBsAGkAZwBoAHQALwByAG8AcwBmAGwAaQBnAGgAdAAvAHMAcgBjAC8AcgBvAHMAZgBsAGkAZwBoAHQAXwBpAG8ALgBjAHAAcAAAACYAQwBwAHAARQBkAGkAdABvAHIALgBDACsAKwBFAGQAaQB0AG8AcgAAABgAAAABAAAA4AAAAAAAAAEOAAAAXgAAAAA=</value>
  </data>
  <data>
   <variable>ProjectDependencies</variable>
@@ -21,12 +21,12 @@
  <data>
   <variable>ProjectList</variable>
   <valuelist type="QVariantList">
-   <value type="QString">/home/dpkoch/rosflight/rosflight_ws/src/fcu_io/CMakeLists.txt</value>
+   <value type="QString">/home/dpkoch/rosflight/rosflight_ws/src/rosflight/rosflight/CMakeLists.txt</value>
   </valuelist>
  </data>
  <data>
   <variable>StartupProject</variable>
-  <value type="QString">/home/dpkoch/rosflight/rosflight_ws/src/fcu_io/CMakeLists.txt</value>
+  <value type="QString">/home/dpkoch/rosflight/rosflight_ws/src/rosflight/rosflight/CMakeLists.txt</value>
  </data>
  <data>
   <variable>value-ActiveMode</variable>
@@ -52,11 +52,11 @@
     <value type="QString">session</value>
    </valuelist>
    <valuelist type="QVariantList">
-    <value type="QString">/home/dpkoch/rosflight/rosflight_ws/src/fcu_io/CMakeLists.txt</value>
-    <value type="QString">fcu_io</value>
+    <value type="QString">/home/dpkoch/rosflight/rosflight_ws/src/rosflight/rosflight/CMakeLists.txt</value>
+    <value type="QString">rosflight</value>
    </valuelist>
    <valuelist type="QVariantList">
-    <value type="QString">/home/dpkoch/rosflight/rosflight_ws/src/fcu_io/src</value>
+    <value type="QString">/home/dpkoch/rosflight/rosflight_ws/src/rosflight/rosflight/src</value>
     <value type="QString">src</value>
    </valuelist>
   </valuelist>
