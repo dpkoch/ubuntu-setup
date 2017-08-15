@@ -1,5 +1,6 @@
 activate-power-mode@2.0.0
 atom-ctags@5.1.0
+atom-ros@0.1.0
 autocomplete-cmake@0.3.1
 autocomplete-python@1.9.1
 git-diff-details@1.4.0
@@ -8,8 +9,10 @@ language-cmake@0.3.0
 language-gitignore@0.3.0
 language-latex@1.0.0
 language-matlab@0.2.1
+language-svg@0.9.2
 latextools@0.8.5
 markdown-preview-plus@2.4.10
 pdf-view@0.59.0
+svg-preview@0.11.0
 tag@0.5.0
 
