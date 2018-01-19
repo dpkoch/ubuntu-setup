@@ -24,3 +24,7 @@ cp $DIR/../resources/vimrc ~/.vimrc
 # mkdocs
 sudo apt-get -y install python-pip
 sudo pip install mkdocs
+
+# install miscellaneous scripts
+cp $DIR/../resources/check-reboot ~/.local/bin/
+
