@@ -1,0 +1,34 @@
+#!/bin/bash
+
+function echo_gray   { echo -e "\033[1;31m$@\033[0m"; }
+function echo_red    { echo -e "\033[1;31m$@\033[0m"; }
+function echo_green  { echo -e "\033[1;32m$@\033[0m"; }
+function echo_yellow { echo -e "\033[1;33m$@\033[0m"; }
+function echo_blue   { echo -e "\033[1;34m$@\033[0m"; }
+function echo_purple { echo -e "\033[1;35m$@\033[0m"; }
+function echo_cyan   { echo -e "\033[1;36m$@\033[0m"; }
+
+SEPARATOR="----------------------------------------"
+
+find . -maxdepth 1 -mindepth 1 -type d | while read DIR
+do
+  pushd . > /dev/null
+  cd $DIR
+  STATUS=$(git status -s 2> /dev/null)
+  if [ ! $? -eq 0 ]; then
+    echo_cyan $SEPARATOR
+    echo_cyan $DIR
+    echo "Not a git repository"
+  elif [ "$STATUS" = "" ]; then
+    echo_green $SEPARATOR
+    echo_green $DIR
+  else
+    echo_red $SEPARATOR
+    echo_red $DIR
+    echo -e "$STATUS"
+  fi
+  popd &> /dev/null
+
+  echo ""
+done
+

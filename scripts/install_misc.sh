@@ -17,6 +17,7 @@ git config --global core.editor vim
 git config --global diff.tool meld
 git config --global merge.tool meld
 git config --global alias.subup "submodule update --init --recursive"
+git config --global color.status always
 
 # vim configuration
 cp $DIR/../resources/vimrc ~/.vimrc
@@ -27,4 +28,5 @@ sudo pip install mkdocs
 
 # install miscellaneous scripts
 cp $DIR/../resources/check-reboot ~/.local/bin/
+cp $DIR/../resources/git-status ~/.local/bin/
 
