@@ -8,23 +8,30 @@ function echo_blue   { echo -e "\033[1;34m$@\033[0m"; }
 function echo_purple { echo -e "\033[1;35m$@\033[0m"; }
 function echo_cyan   { echo -e "\033[1;36m$@\033[0m"; }
 
-SEPARATOR="----------------------------------------"
+HEADER="%======================================="
+SEPARATOR="%---------------------------------------"
 
 find . -maxdepth 1 -mindepth 1 -type d | while read DIR
 do
   pushd . > /dev/null
   cd $DIR
+  NAME="$(basename $DIR)"
+  BRANCH=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
   STATUS=$(git status -s 2> /dev/null)
   if [ ! $? -eq 0 ]; then
+    echo_cyan $HEADER
+    echo_cyan "% $NAME"
     echo_cyan $SEPARATOR
-    echo_cyan $DIR
     echo "Not a git repository"
   elif [ "$STATUS" = "" ]; then
+    echo_green $HEADER
+    echo_green "% $NAME ($BRANCH)"
     echo_green $SEPARATOR
-    echo_green $DIR
+    echo "Clean"
   else
+    echo_red $HEADER
+    echo_red "% $NAME ($BRANCH)"
     echo_red $SEPARATOR
-    echo_red $DIR
     echo -e "$STATUS"
   fi
   popd &> /dev/null
