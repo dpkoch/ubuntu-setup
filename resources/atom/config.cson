@@ -9,13 +9,28 @@
     ]
     telemetryConsent: "limited"
   editor:
+    fontSize: 13
     preferredLineLength: 120
     softWrap: true
   "exception-reporting":
     userId: "515c11af-7de4-477c-86d9-221aea214111"
   latextools: {}
   "markdown-preview": {}
+  "todo-show":
+    sortBy: "Path"
   "tree-view":
     hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
+  wordcount:
+    extensions: [
+      "md"
+      "markdown"
+      "readme"
+      "txt"
+      "rst"
+      "adoc"
+      "log"
+      "msg"
+      "tex"
+    ]
