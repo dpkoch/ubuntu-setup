@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=EAGLE %%VERSION%%
+GenericName=PCB Design and Schematic Software
+Comment=PCB Design and Schematic Software
+Exec=/opt/eagle/eagle-%%VERSION%%/eagle
+Icon=eagle
+Terminal=false
+Type=Application
+Categories=Electronics;Engineering;Development;
+StartupNotify=true
