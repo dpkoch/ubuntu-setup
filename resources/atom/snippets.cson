@@ -19,3 +19,54 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.cpp':
+  'Class header file':
+    'prefix': 'header'
+    'body': """
+      /**
+       * @file ${1:file}.h
+       * @author ${2:Daniel Koch} <${3:daniel.p.koch@gmail.com}>
+       */
+
+      #ifndef ${4:ROSFLIGHT_FIRMWARE}_${5:CLASS}_H
+      #define ${4:ROSFLIGHT_FIRMWARE}_${5:CLASS}_H
+
+      namespace ${6:rosflight_firmware}
+      {
+
+      class ${7:Class}
+      {
+      };
+
+      } // namespace ${6:rosflight_firmware}
+
+      #endif // ${4:ROSFLIGHT_FIRMWARE}_${5:CLASS}_H
+    """
+
+  'Doxygen class description':
+    'prefix': 'dclass'
+    'body': """
+      /**
+       * @brief ${1:description}
+       */
+    """
+
+  'Doxygen file description':
+    'prefix': 'dfile'
+    'body': """
+      /**
+       * @file ${1:file}
+       * @author ${2:My Name} <${3:email@todo.com}>
+       */
+    """
+
+  'Doxygen function description':
+    'prefix': 'dfunc'
+    'body': """
+      /**
+       * @brief ${1:description}
+       * @param ${2:name} ${3:description}
+       * @return ${4:description}
+       */
+    """

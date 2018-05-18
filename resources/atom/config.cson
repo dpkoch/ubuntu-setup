@@ -3,19 +3,28 @@
     autoToggle: false
     comboMode:
       enabled: false
+  "atom-ide-ui":
+    use: {}
   core:
     disabledPackages: [
       "symbols-view"
+      "atom-ros"
+      "autocomplete-python"
     ]
     telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
   editor:
-    fontSize: 13
+    fontSize: 12
     preferredLineLength: 120
     softWrap: true
   "exception-reporting":
     userId: "515c11af-7de4-477c-86d9-221aea214111"
   latextools: {}
   "markdown-preview": {}
+  "symbols-tree-view": {}
   "todo-show":
     sortBy: "Path"
   "tree-view":
