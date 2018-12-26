@@ -1,0 +1,12 @@
+export ROS_MASTER_URI=http://`cat ~/.rosmasteruri`:11311
+
+#WS=/home/dpkoch/catkin_ws
+
+if [ -z "$WS" ]; then
+  source /opt/ros/melodic/setup.zsh
+else
+  source $WS/devel/setup.zsh
+fi
+
+export ROSCONSOLE_FORMAT='[${severity}] [${node}]: ${message}'
+export ROSCONSOLE_CONFIG_FILE=/home/dpkoch/.rosconsole
