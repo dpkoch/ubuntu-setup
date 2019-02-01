@@ -1,0 +1,4 @@
+rofi.combi-modi:   window,drun,run
+rofi.modi:         combi,run
+rofi.location:     1
+rofi.theme:        /home/dpkoch/.config/rofi/material.rasi
