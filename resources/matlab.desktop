@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=MATLAB
+Comment=The Language of Technical Computing
+Exec=matlab -desktop
+Icon=matlab
+Terminal=false
+Type=Application
+Categories=Development;Math;Science;
+StartupNotify=true
+StartupWMClass=sun-awt-X11-XFramePeer
+X-Desktop-File-Install-Version=0.22
