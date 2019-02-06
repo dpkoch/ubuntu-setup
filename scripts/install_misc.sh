@@ -16,8 +16,15 @@ git config --global push.default simple
 git config --global core.editor vim
 git config --global diff.tool meld
 git config --global merge.tool meld
-git config --global alias.subup "submodule update --init --recursive"
 git config --global color.status always
+
+git config --global alias.subup "submodule update --init --recursive"
+git config --global alias.br branch
+git config --global alias.st status
+git config --global alias.ch checkout
+
+git config --global --add url.git@github.com:.insteadOf git://github.com/
+git config --global --add url.git@github.com:.insteadOf https://github.com/
 
 # vim configuration
 cp $DIR/../resources/vimrc ~/.vimrc
