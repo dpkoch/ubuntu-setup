@@ -13,7 +13,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 # customize
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cp -r $DIR/../resources/zsh ~
-sed -i 's/^ZSH_THEME=".*"$/ZSH_THEME="dpkoch"/'
+cp -r $DIR/../resources/zsh/. ~
+sed -i 's/^ZSH_THEME=".*"$/ZSH_THEME="dpkoch"/' ~/.zshrc
 
 # TODO modify PATH, source .rosrc, etc.
