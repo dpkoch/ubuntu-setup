@@ -15,6 +15,8 @@ sudo add-apt-repository \
 sudo apt update
 sudo apt -y install docker-ce
 
+sudo usermod -a -G docker $USER
+
 # install bloom
 sudo apt -y install python-bloom
-sudo usermod -a -G docker $USER
+sudo apt -y install python3-ros-buildfarm
