@@ -1,4 +1,3 @@
 #!/bin/bash
 
-cd /opt/gnuarmeclipse/openocd/0.10.0-201704182147-dev/bin
-./openocd -f interface/stlink-v2.cfg -f target/stm32f1x.cfg
+openocd -f interface/stlink-v2.cfg -f target/stm32f1x.cfg
