@@ -9,23 +9,18 @@ sudo apt update
 sudo apt -y install ros-melodic-desktop-full
 sudo rosdep init
 rosdep update
-sudo apt-get -y install python-rosinstall
+sudo apt -y install python-rosinstall
 
 # local configuration
-if [ ! -d "/home/$USER/.local/bin" ]; then
-  mkdir /home/$USER/.local/bin
-fi
-cp $DIR/../resources/setrosmaster ~/.local/bin/
+cp -r $DIR/../resources/ros/. ~
 
-cp $DIR/../resources/rosconsole ~/.rosconsole
-cp $DIR/../resources/rosrc ~/.rosrc
-
-if ! grep -xq "source /home/$USER/.rosrc" ~/.bashrc
-then
-  echo "" >> ~/.bashrc
-  echo "# ROS" >> ~/.bashrc
-  echo "source /home/$USER/.rosrc" >> ~/.bashrc
+LINE="source /home/$USER/.rosrc"
+if [ -f ~/.zshrc ]; then
+  if ! grep -xq "$LINE" ~/.zshrc; then
+    echo "" >> ~/.zshrc
+    echo "# ROS" >> ~/.zshrc
+    echo "$LINE" >> ~/.zshrc
+  fi
 fi
 
 setrosmaster localhost
-source ~/.rosrc
