@@ -16,4 +16,11 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cp -r $DIR/../resources/zsh/. ~
 sed -i 's/^ZSH_THEME=".*"$/ZSH_THEME="dpkoch"/' ~/.zshrc
 
-# TODO modify PATH, source .rosrc, etc.
+# modify PATH
+LINE="PATH=\$HOME/.local/bin:\$PATH"
+if ! grep -xq "$LINE" ~/.zshrc
+then
+  echo "" >> ~/.zshrc
+  echo "# path" >> ~/.zshrc
+  echo "$LINE" >> ~/.zshrc
+fi
