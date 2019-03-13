@@ -37,3 +37,6 @@ sudo pip install mkdocs
 cp $DIR/../resources/check-reboot ~/.local/bin/
 cp $DIR/../resources/git-status ~/.local/bin/
 
+# override default opening of bibtex and pdf files in Mendeley destkop
+xdg-mime default gedit.desktop text/x-bibtex
+xdg-mime default evince.desktop application/pdf
