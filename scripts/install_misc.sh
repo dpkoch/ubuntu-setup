@@ -25,6 +25,7 @@ git config --global alias.ch checkout
 
 git config --global --add url.git@github.com:.insteadOf git://github.com/
 git config --global --add url.git@github.com:.insteadOf https://github.com/
+git config --global --add url.git@magiccvs.byu.edu:.insteadOf https://magiccvs.byu.edu/gitlab/
 
 # vim configuration
 cp $DIR/../resources/vimrc ~/.vimrc
