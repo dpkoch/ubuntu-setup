@@ -21,12 +21,12 @@ rm /tmp/$FILENAME
 sudo chmod -R a+rX /opt/eagle/eagle-$EAGLE_VERSION/
 
 # add to path
-BASHRC_LINE="export PATH=\"/opt/eagle/eagle-$EAGLE_VERSION:\$PATH\""
-if ! grep -xq "$BASHRC_LINE" ~/.bashrc
+LINE="export PATH=\"/opt/eagle/eagle-$EAGLE_VERSION:\$PATH\""
+if ! grep -xq "$LINE" ~/.zshrc
 then
-  echo "" >> ~/.bashrc
-  echo "# Eagle" >> ~/.bashrc
-  echo $BASHRC_LINE >> ~/.bashrc
+  echo "" >> ~/.zshrc
+  echo "# Eagle" >> ~/.zshrc
+  echo $LINE >> ~/.zshrc
 fi
 
 # add desktop file
