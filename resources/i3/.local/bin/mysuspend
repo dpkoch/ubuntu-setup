@@ -1,4 +1,5 @@
 #!/bin/bash
 
-systemctl suspend
 lock
+sleep 0.1s
+systemctl suspend
