@@ -179,9 +179,23 @@ bar {
 	# output primary
 	tray_output primary
         status_command i3status
+
+	colors {
+		background #282c34
+		statusline #c8ccd4
+		separator #545862
+
+		# colorclass       border  bg      text
+		focused_workspace  #61afef #61afef #c8ccd4
+		active_workspace   #282c34 #282c34 #c8ccd4
+		inactive_workspace #282c34 #282c34 #545862
+		urgent_workspace   #be5046 #be5046 #c8ccd4
+	}
 }
 
 #### CUSTOM STUFF ####
+workspace_auto_back_and_forth yes
+
 exec_always --no-startup-id numlockx on
 exec_always --no-startup-id /home/dpkoch/.fehbg
 workspace 6 output DP-1-2
@@ -215,3 +229,11 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioStop exec playerctl stop
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+#### COLORS ####
+# class                 border  backgr  text    indicator child_border
+client.focused          #282c34 #61aafb #ffffff #c678dd   #61aafb
+client.unfocused        #282c34 #353b45 #c8ccd4 #353b45   #353b45
+client.focused_inactive #282c34 #545862 #c8ccd4 #545862   #545862
+client.urgent           #282c34 #be5046 #c8ccd4 #be5046   #be5046
+client.background #282c34
