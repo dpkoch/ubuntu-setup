@@ -1,6 +1,10 @@
 #!/bin/bash
 
-sudo apt -y install gcc-arm-none-eabi stm32flash openocd dfu-util
+sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
+sudo apt-get update
+sudo apt-get install gcc-arm-embedded
+
+sudo apt -y install stm32flash openocd dfu-util
 
 # setup openocd
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
