@@ -6,4 +6,4 @@ sudo gem install sass
 sudo gem install compass
 
 # install local web server
-sudo apt-get -y install apache2 php libapache2-mod-php
+sudo apt-get -y install nginx php-fpm php-curl
