@@ -172,6 +172,22 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# define colors (One Dark theme)
+set $black     #282c34
+set $dkgray    #353b45
+set $gray      #545862
+set $silver    #abb2bf
+set $text      #c8ccd4
+set $red       #e06c75
+set $green     #98c379
+set $yellow    #e5c07b
+set $blue      #61afef
+set $purple    #c678dd
+set $teal      #56b6c2
+set $orange    #d19a66
+set $redorange #be4046
+set $white     #ffffff
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -181,20 +197,21 @@ bar {
         status_command i3status
 
 	colors {
-		background #282c34
-		statusline #c8ccd4
-		separator #545862
+		background $black
+		statusline $text
+		separator $gray
 
-		# colorclass       border  bg      text
-		focused_workspace  #61afef #61afef #c8ccd4
-		active_workspace   #282c34 #282c34 #c8ccd4
-		inactive_workspace #282c34 #282c34 #545862
-		urgent_workspace   #be5046 #be5046 #c8ccd4
+		# colorclass       border     bg         text
+		focused_workspace  $teal      $teal      $white
+		active_workspace   $black     $black     $text
+		inactive_workspace $black     $black     $gray
+		urgent_workspace   $redorange $redorange $white
 	}
 }
 
 #### CUSTOM STUFF ####
 workspace_auto_back_and_forth yes
+hide_edge_borders smart
 
 exec_always --no-startup-id numlockx on
 exec_always --no-startup-id /home/dpkoch/.fehbg
@@ -231,9 +248,9 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 #### COLORS ####
-# class                 border  backgr  text    indicator child_border
-client.focused          #282c34 #61aafb #ffffff #c678dd   #61aafb
-client.unfocused        #282c34 #353b45 #c8ccd4 #353b45   #353b45
-client.focused_inactive #282c34 #545862 #c8ccd4 #545862   #545862
-client.urgent           #282c34 #be5046 #c8ccd4 #be5046   #be5046
-client.background #282c34
+# class                 border     background text       indicator    child_border
+client.focused          $teal      $teal      $white     $green        $teal
+client.unfocused        $dkgray    $dkgray    $text      $dkgray      $dkgray
+client.focused_inactive $gray      $gray      $text      $gray        $gray
+client.urgent           $redorange $redorange $white     $redorange   $redorange
+client.background $black
