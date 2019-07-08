@@ -31,8 +31,8 @@ git config --global --add url.git@magiccvs.byu.edu:.insteadOf https://magiccvs.b
 cp $DIR/../resources/vimrc ~/.vimrc
 
 # mkdocs
-sudo apt-get -y install python-pip
-sudo pip install mkdocs
+sudo apt-get -y install python-pip python3-pip
+#sudo pip install mkdocs
 
 # install miscellaneous scripts
 cp $DIR/../resources/check-reboot ~/.local/bin/
@@ -41,3 +41,6 @@ cp $DIR/../resources/git-status ~/.local/bin/
 # override default opening of bibtex and pdf files in Mendeley destkop
 xdg-mime default gedit.desktop text/x-bibtex
 xdg-mime default evince.desktop application/pdf
+
+# exfat filesystem support
+sudo apt -y install exfat-fuse exfat-utils
