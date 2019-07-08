@@ -1,0 +1,9 @@
+[Unit]
+Description=Fix to prevent waking immediately after suspend
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'for i in $(cat /proc/acpi/wakeup | grep enabled | awk "{print $1}"); do [ $i != PBTN ] && [ $i != LID0 ] && echo $i > /proc/acpi/wakeup; done'
+
+[Install]
+WantedBy=multi-user.target

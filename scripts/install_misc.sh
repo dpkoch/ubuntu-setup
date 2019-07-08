@@ -44,3 +44,7 @@ xdg-mime default evince.desktop application/pdf
 
 # exfat filesystem support
 sudo apt -y install exfat-fuse exfat-utils
+
+# suspend fix for laptops (only allow lid and power button to wake)
+sudo cp $DIR/../resources/suspendfix.service /etc/systemd/system/
+sudo systemctl enable suspendfix.service
