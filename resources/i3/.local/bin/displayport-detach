@@ -1,0 +1,5 @@
+#!/bin/bash
+
+xrandr --output DP-1 --off
+/home/dpkoch/.fehbg
+i3-msg restart

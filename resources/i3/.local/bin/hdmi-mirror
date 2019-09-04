@@ -1,0 +1,5 @@
+#!/bin/bash
+
+xrandr --output HDMI-1 --auto --primary --output eDP-1 --auto --same-as HDMI-1
+/home/dpkoch/.fehbg
+i3-msg restart
