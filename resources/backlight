@@ -1,0 +1,24 @@
+#!/bin/sh
+
+DIR=/sys/class/backlight/intel_backlight
+
+test -d $DIR || exit 0
+
+MIN=0
+MAX=$(cat $DIR/max_brightness)
+VAL=$(cat $DIR/brightness)
+INC=100
+
+if [ "$1" = down ]; then
+	VAL=$((VAL-INC))
+else
+	VAL=$((VAL+INC))
+fi
+
+if [ "$VAL" -lt $MIN ]; then
+	VAL=$MIN
+elif [ "$VAL" -gt $MAX ]; then
+	VAL=$MAX
+fi
+
+echo $VAL > $DIR/brightness

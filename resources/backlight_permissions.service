@@ -1,0 +1,9 @@
+[Unit]
+Description=Set world write permissions for backlight brightness
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'chmod 666 /sys/class/backlight/intel_backlight/brightness'
+
+[Install]
+WantedBy=multi-user.target

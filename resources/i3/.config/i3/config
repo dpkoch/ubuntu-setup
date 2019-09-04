@@ -247,6 +247,9 @@ bindsym XF86AudioStop exec playerctl stop
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+bindsym XF86MonBrightnessUp exec backlight up
+bindsym XF86MonBrightnessDown exec backlight down
+
 #### COLORS ####
 # class                 border     background text       indicator    child_border
 client.focused          $teal      $teal      $white     $green        $teal

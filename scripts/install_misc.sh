@@ -48,3 +48,8 @@ sudo apt -y install exfat-fuse exfat-utils
 # suspend fix for laptops (only allow lid and power button to wake)
 sudo cp $DIR/../resources/suspendfix.service /etc/systemd/system/
 sudo systemctl enable suspendfix.service
+
+# change backlight script and service to set permissions
+sudo cp $DIR/../resources/backlight_permissions.service /etc/systemd/system/
+sudo systemctl enable backlight_permissions.service
+cp $DIR/../resources/backlight ~/.local/bin
