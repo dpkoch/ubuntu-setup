@@ -172,44 +172,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# define colors (One Dark theme)
-set $black     #282c34
-set $dkgray    #353b45
-set $gray      #545862
-set $silver    #abb2bf
-set $text      #c8ccd4
-set $red       #e06c75
-set $green     #98c379
-set $yellow    #e5c07b
-set $blue      #61afef
-set $purple    #c678dd
-set $teal      #56b6c2
-set $orange    #d19a66
-set $redorange #be4046
-set $white     #ffffff
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-	position bottom
-	# output primary
-	tray_output primary
-        status_command i3status
-
-	colors {
-		background $black
-		statusline $text
-		separator $gray
-
-		# colorclass       border     bg         text
-		focused_workspace  $teal      $teal      $white
-		active_workspace   $black     $black     $text
-		inactive_workspace $black     $black     $gray
-		urgent_workspace   $redorange $redorange $white
-	}
-}
-
 #### CUSTOM STUFF ####
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 workspace_auto_back_and_forth yes
 hide_edge_borders smart
 
@@ -255,9 +220,28 @@ bindsym $mod+c exec deepin-calculator
 bindsym $mod+Shift+s exec gnome-screenshot -i
 
 #### COLORS ####
+
+# Nord theme (https://www.nordtheme.com/)
+set $nord0  #2e3440
+set $nord1  #3b4251
+set $nord2  #434c5e
+set $nord3  #4c566a
+set $nord4  #d8dee9
+set $nord5  #e5e9f0
+set $nord6  #eceff4
+set $nord7  #8fbcbb
+set $nord8  #88c0d0
+set $nord9  #81a1c1
+set $nord10 #5e81ac
+set $nord11 #bf616a
+set $nord12 #d08770
+set $nord13 #ebcb8b
+set $nord14 #a3be8c
+set $nord15 #b48ead
+
 # class                 border     background text       indicator    child_border
-client.focused          $teal      $teal      $white     $green        $teal
-client.unfocused        $dkgray    $dkgray    $text      $dkgray      $dkgray
-client.focused_inactive $gray      $gray      $text      $gray        $gray
-client.urgent           $redorange $redorange $white     $redorange   $redorange
-client.background $black
+client.focused          $nord9     $nord9     $nord6     $nord7       $nord9
+client.unfocused        $nord2     $nord2     $nord6     $nord2       $nord2
+client.focused_inactive $nord1     $nord1     $nord6     $nord1       $nord1
+client.urgent           $nord13    $nord13    $nord6     $nord13      $nord13
+client.background $nord0

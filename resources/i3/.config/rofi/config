@@ -1,4 +1,13 @@
-rofi.combi-modi:   window,drun,run
-rofi.modi:         combi,run
-rofi.location:     1
-rofi.theme:        /home/dpkoch/.config/rofi/material.rasi
+rofi.combi-modi:            window,drun,run
+rofi.modi:                  combi,run
+rofi.location:              0
+rofi.show-icons:            true
+rofi.lines:                 7
+rofi.line-padding:          10
+rofi.matching:              fuzzy
+rofi.bw:                    0
+rofi.padding:               0
+rofi.separator-style:       none
+rofi.line-margin:           0
+rofi.font:                  RobotoMono 12
+rofi.theme:                 /home/dpkoch/.config/rofi/nord.rasi

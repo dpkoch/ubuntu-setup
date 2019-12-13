@@ -1,0 +1,174 @@
+[colors]
+nord0  = #2E3440
+nord1  = #3B4252
+nord2  = #434C5E
+nord3  = #4C566A
+nord4  = #D8DEE9
+nord5  = #E5E9F0
+nord6  = #ECEFF4
+nord7  = #8FBCBB
+nord8  = #88C0D0
+nord9  = #81A1C1
+nord10 = #5E81AC
+nord11 = #BF616A
+nord12 = #D08770
+nord13 = #EBCB8B
+nord14 = #A3BE8C
+nord15 = #B48EAD
+
+background = ${self.nord1}
+foreground = ${self.nord4}
+focused = ${self.nord9}
+visible = ${self.nord3}
+urgent = ${self.nord13}
+
+[bar/bar1]
+monitor = ${env:MONITOR1}
+; wm-restack = i3
+; override-redirect = true
+
+width = 100%
+height = 25
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = Roboto Mono:style=Regular:size=9;1
+font-1 = Font Awesome 5 Free Solid:style=Solid:size=9;1
+
+modules-left = i3
+modules-center = datetime
+modules-right = cpu memory disk audio wired wireless battery
+
+tray-position = right
+
+underline-size = 3
+overline-size = 3
+
+padding-right = 1
+module-margin = 1
+
+bottom = false
+
+[bar/bar2]
+inherit = bar/bar1
+monitor = ${env:MONITOR2}
+modules-right =
+tray-position = none
+
+[bar/bar3]
+inherit = bar/bar2
+monitor = ${env:MONITOR3}
+
+[bar/bar4]
+inherit = bar/bar2
+monitor = ${env:MONITOR4}
+
+[bar/bar5]
+inherit = bar/bar2
+monitor = ${env:MONITOR5}
+
+[bar/bar6]
+inherit = bar/bar2
+monitor = ${env:MONITOR6}
+
+[module/i3]
+type = internal/i3
+pin-workspaces = true
+
+label-focused = %index%
+label-visible = %index%
+label-unfocused = %index%
+label-urgent = %index%
+
+label-focused-overline = ${colors.focused}
+label-visible-overline = ${colors.visible}
+label-urgent-overline = ${colors.urgent}
+label-mode-overline = ${colors.urgent}
+
+label-focused-padding = 2
+label-unfocused-padding = 2
+label-visible-padding = 2
+label-urgent-padding = 2
+label-mode-padding = 1
+
+[module/wired]
+type = internal/network
+interface = enp0s31f6
+label-connected = %{F#81A1C1}  %{F-} %local_ip%
+format-connected = <label-connected>
+
+[module/wireless]
+type = internal/network
+interface = wlp1s0
+label-connected = %{F#81A1C1}  %{F-} %essid%
+format-connected = <label-connected>
+
+[module/audio]
+type = internal/pulseaudio
+use-ui-max = false
+
+format-volume = <label-volume>
+label-volume = %{F#81A1C1} %{F-} %percentage:3%%
+
+label-muted = %{F#81A1C1} %{F-}
+
+ramp-volume-0 = "  "
+ramp-volume-1 = "  "
+ramp-volume-2 = "  "
+ramp-volume-foreground = #81A1C1
+
+[module/battery]
+type = internal/battery
+
+battery = BAT0
+adapter = AC
+
+time-format = %H:%M
+
+label-full =%{F#81A1C1}  %{F-} %percentage%%
+
+format-charging = <ramp-capacity> <label-charging>
+label-charging = %{F#81A1C1}  %{F-} %percentage%% (%time%)
+
+format-discharging = <ramp-capacity> <label-discharging>
+label-discharging = %percentage%% (%time%)
+
+ramp-capacity-0 = "  "
+ramp-capacity-1 = "  "
+ramp-capacity-2 = "  "
+ramp-capacity-3 = "  "
+ramp-capacity-4 = "  "
+ramp-capacity-foreground = #81A1C1
+
+[module/cpu]
+type = internal/cpu
+format = <label>
+label = %{F#81A1C1}  %{F-} %percentage%%
+
+[module/memory]
+type = internal/memory
+format = <label>
+label = %{F#81A1C1}  %{F-} %percentage_used%%
+
+[module/disk]
+type = internal/fs
+mount-0 = /
+
+format-mounted = <label-mounted>
+label-mounted = %{F#81A1C1}  %{F-} %free% free (%percentage_free%%)
+
+format-unmounted = <label-unmounted>
+label-unmounted = %{F#81A1C1}  %{F-} ---
+
+[module/datetime]
+type = internal/date
+
+date = %e %b
+time = %l:%M%p
+
+date-alt = %a, %e %b %Y
+time-alt = %l:%M:%S%p
+
+format = <label>
+label = %{F#81A1C1}  %{F-}%date% %{F#81A1C1}  %{F-}%time%
