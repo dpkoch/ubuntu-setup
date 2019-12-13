@@ -241,7 +241,7 @@ set $nord15 #b48ead
 
 # class                 border     background text       indicator    child_border
 client.focused          $nord9     $nord9     $nord6     $nord7       $nord9
-client.unfocused        $nord2     $nord2     $nord6     $nord2       $nord2
-client.focused_inactive $nord1     $nord1     $nord6     $nord1       $nord1
+client.unfocused        $nord1     $nord1     $nord6     $nord1       $nord1
+client.focused_inactive $nord2     $nord2     $nord6     $nord2       $nord2
 client.urgent           $nord13    $nord13    $nord6     $nord13      $nord13
 client.background $nord0
