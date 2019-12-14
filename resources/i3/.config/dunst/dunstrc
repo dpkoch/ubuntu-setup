@@ -125,8 +125,8 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    #format = "<span foreground="#D8DEE9" size="smaller">%a</span>\n<b>%s</b> %p\n%b"
-    format = "<span foreground="#D8DEE9" size="smaller">%a</span>\n<b>%s</b> %p\n%b\n%i"
+    format = "<span foreground="#D8DEE9" size="smaller">%a</span>\n<b>%s</b> %p\n%b"
+    #format = "<span foreground="#D8DEE9" size="smaller">%a</span>\n<b>%s</b> %p\n%b\n%i"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
