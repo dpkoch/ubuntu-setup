@@ -4,8 +4,8 @@
     backgroundcoloralternate: #2e3440;
     separatorcolor: #3b4252;
     scrollbarcolor: #3b4252;
-    foregroundcolor: #8FBCBB;
-    foregroundcolorinverse: #8FBCBB;
+    foregroundcolor: #D8DEE9;
+    foregroundcolorinverse: #D8DEE9;
     selectioncolor: #3b4252;
 
 
