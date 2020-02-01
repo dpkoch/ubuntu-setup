@@ -1,3 +1,5 @@
 #!/bin/bash
 
-i3lock -e -c 001247 -i /home/dpkoch/Pictures/lock_screen.png
+killall -SIGUSR1 dunst # pause dunst
+i3lock -n -e -c 001247 -t -i /home/dpkoch/Pictures/lock_screen.png
+killall -SIGUSR2 dunst # resume dunst
